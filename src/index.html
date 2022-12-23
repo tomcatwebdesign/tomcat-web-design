@@ -1,22 +1,113 @@
 ---
 layout: default
-title: Neat Starter
+title: Tomcat Web Design | Modern Web Design and Development | Rapid City, South Dakota
 path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
+<!-- Hero -->
+<section id="hero" class="container-fluid">
+  <div class="row">
+    <div class="hero-content col-md-6">
+      <h1>Websites with a purpose</h1>
+      <p>We build websites that drive real results to help business develop and grow.</p>
+      <a href="#estimate" class="btn">Talk About Your Project</a>
+    </div>
+    <div class="hero-img col-md-6">
+      <img src="/static/img/hero-img.png" alt="laptop with tomcat logo">
+    </div>
+  </div>
+</section>
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
+<!-- Responsinve -->
+<section id="responsive">
+  <div class="container-fluid">
+    <div class="row">
+      <div id="responsive-img" class="responsive-img col-md-6">
+        <img src="/static/img/feature1.png" alt="phone with tomcat logo">
+      </div>
+      <div id="responsive-content" class="responsive-content col-md-6">
+        <h2>Look Good On All Devices</h2>
+        <p>Over half of all web traffic comes from mobile devices. Every website we push to production looks good on
+          every device you can think of.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  {% include "./_includes/partials/content.html" %}
-</div>
+<!--Modern -->
+<section id="modern">
+  <div class="container-fluid">
+    <div class="row">
+      <div id="modern-content" class="modern-content col-md-6">
+        <h2>Modern Design</h2>
+        <p>Web design is ever-changing. We craft our websites with a perfect balance of beauty and function to make sure
+          your site stays up to date with design standards while mainting usability.</p>
+      </div>
+      <div id="modern-img" class="modern-img col-md-6">
+        <img src="/static/img/modern1.jpg" alt="design image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Results -->
+<section id="results">
+  <div class="container-fluid">
+    <div class="row">
+      <div id="results-img" class="results-img col-md-6">
+        <img src="/static/img/results.png" alt="computer with website results">
+      </div>
+      <div id="results-content" class="results-content col-md-6">
+        <h2>Real Results</h2>
+        <p>When we desig a website, we do so with a purpose. Whether you're looking to drive sales, spread information,
+          or build a community, we've got you covered.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Start -->
+<section id="start">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="start-container">
+        <h2 class="text-center">Ready To Talk?</h2>
+        <!-- <p class="text-center">Let's get started.</p> -->
+        <a href="#estimate" class="btn">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="estimate">
+  <div id="form-container" class="container-fluid">
+    <h2 id="contact-heading">Let's Start Your Project</h2>
+    <h2 id="thank-you-heading">Thank You</h2>
+    <p id="thank-you-p">
+      Thank you and we will be in touch very soon!
+    </p>
+    <form id="estimate-form">
+      <div class="form-group">
+        <label for="nameInput">Name</label>
+        <input type="text" class="form-control" name="nameInput" id="nameInput" aria-describedby="emailHelp"
+          placeholder="Enter Name">
+      </div>
+      <div class="form-group">
+        <label for="phoneInput">Phone</label>
+        <input type="phone" class="form-control" name="phoneInput" id="phoneInput" placeholder="Phone Number">
+      </div>
+      <div class="form-group">
+        <label for="emailInput">Email</label>
+        <input type="email" class="form-control" name="emailInput" id="emailInput" aria-describedby="emailHelp"
+          placeholder="Enter Email">
+      </div>
+      <div class="form-group">
+        <label for="messageInput">How Can We Help?</label>
+        <textarea class="form-control" name="messageInput" id="messageInput" rows="6"
+          placeholder="Tell Us About Your Project..."></textarea>
+      </div>
+      <button id="form-submit" type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</section>

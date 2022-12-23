@@ -1,0 +1,108 @@
+@import 'settings.less';
+
+// Portfolio hero
+#portfolio {
+    .title-row {
+        .portfolio-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 200px;
+            .nunito-bold;
+            width: 100%;
+
+            h1 {
+                font-size: 4rem;
+                color: rgb(70, 70, 70);
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            img {
+                width: 40px;
+            }
+        }
+    }
+
+    .button-row {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+
+        a {
+            margin: 10px 10px;
+            border-color: @main-yellow;
+            border-width: 2px;
+        }
+
+        a:hover {
+            background-color: @main-yellow;
+            // color: @dark-text;
+        }
+
+        a:focus {
+            outline: 0;
+            box-shadow: none !important;
+        }
+
+        a.active {
+            background-color: @main-yellow;
+        }
+    }
+
+    .portfolio-row {
+        .portfolio-item {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+            padding: 0;
+
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+
+            .portfolio-item-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transition: all .5s .2s;
+
+                h2 {
+                    color: white;
+                }
+            }
+
+            .overlay {
+                position: absolute;
+                background-color: @main-yellow;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all .5s;
+            }
+        }
+
+        .portfolio-item:hover {
+            .overlay {
+                opacity: .4;
+            }
+
+            .portfolio-item-content {
+                opacity: 1;
+            }
+        }
+    }
+
+}
