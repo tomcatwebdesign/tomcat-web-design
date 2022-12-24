@@ -303,13 +303,12 @@ h3 {
 }
 #portfolio .portfolio-row .portfolio-item {
   position: relative;
-  height: 500px;
+  height: 400px;
   overflow: hidden;
   padding: 0;
 }
 #portfolio .portfolio-row .portfolio-item img {
-  object-fit: cover;
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 #portfolio .portfolio-row .portfolio-item .portfolio-item-content {
@@ -319,6 +318,7 @@ h3 {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -326,10 +326,15 @@ h3 {
 }
 #portfolio .portfolio-row .portfolio-item .portfolio-item-content h2 {
   color: white;
+  margin-bottom: 20px;
+}
+#portfolio .portfolio-row .portfolio-item .portfolio-item-content a {
+  color: white;
+  text-decoration: underline;
 }
 #portfolio .portfolio-row .portfolio-item .overlay {
   position: absolute;
-  background-color: #FED016;
+  background-color: rgba(1, 1, 138, 0.491);
   top: 0;
   left: 0;
   width: 100%;
@@ -338,7 +343,7 @@ h3 {
   transition: all 0.5s;
 }
 #portfolio .portfolio-row .portfolio-item:hover .overlay {
-  opacity: 0.4;
+  opacity: 0.8;
 }
 #portfolio .portfolio-row .portfolio-item:hover .portfolio-item-content {
   opacity: 1;
