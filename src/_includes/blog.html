@@ -4,10 +4,17 @@ layout: default
 path: blog
 ---
 
-<div class="container max-w-3xl mt-6 px-6">
+<section id="blog" class="container-fluid">
+    <div class="row title-row">
+        <div class="blog-header">
+            <h1 class="text-center">Our Blog</h1>
+            <img id="blog-logo" src="/static/img/favicon.png" alt="">
+        </div>
+    </div>
 
-    <h1 class="font-bold text-5xl">{{title}}</h1>
+    <div class="blog-posts-wrapper container">
+        {{ content | safe }}
+    </div>
+</section>
 
-    {{ content | safe }}
 
-</div>

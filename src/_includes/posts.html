@@ -1,11 +1,17 @@
 ---
 layout: default
-prism: true
+path: post
 ---
 
-<div class="container max-w-4xl mt-6  px-6">
+<section id="posts" class="container-fluid">
+    <div class="row title-row">
+        <div class="post-header">
+            <h1 class="text-center">{{title}}</h1>
+            <img id="post-logo" src="/static/img/favicon.png" alt="">
+        </div>
+    </div>
+
     <div class="pb-5 mb-5 border-b border-gray-100">
-        <h1 class="font-bold text-5xl">{{title}}</h1>
         <p class="text-center text-base leading-6 font-medium text-gray-500">
             <time> {{ date | readableDate }}
                 by
@@ -15,7 +21,7 @@ prism: true
         </p>
 
     </div>
-    <article class="prose lg:prose-xl my-4 mx-auto">
-        {{ content | safe }}</article>
-
-</div>
+    <article class="blog-posts-wrapper">
+        {{ content | safe }}
+    </article>
+</section>
