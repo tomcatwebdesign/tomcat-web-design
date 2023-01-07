@@ -62,9 +62,9 @@ menuLinks.forEach(link => {
 });
 
 // Hide form on submit and insert thank you note
-// formBtn.addEventListener('click', function () {
-//     formContainer.classList.add('hide-form');
-// });
+formBtn.addEventListener('click', function () {
+    formContainer.classList.add('hide-form');
+});
 
 // Scroll Reveal
 ScrollReveal().reveal('#responsive-img',
