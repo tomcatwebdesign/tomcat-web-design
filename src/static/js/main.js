@@ -2,25 +2,9 @@ const menuBtn       = document.getElementById('menu-btn');
 const menu          = document.getElementById('menu');
 const menuLinks     = document.querySelectorAll('.menu-item');
 const body          = document.querySelector('body');
-// const formBtn       = document.getElementById('form-submit');
-// const form          = document.getElementById('estimate-form');
-// const formContainer = document.getElementById('form-container');
-
-// barba.init({
-//   transitions: [{
-//     name: 'opacity-transition',
-//     leave(data) {
-//       return gsap.to(data.current.container, {
-//         opacity: 0
-//       });
-//     },
-//     enter(data) {
-//       return gsap.from(data.next.container, {
-//         opacity: 0
-//       });
-//     }
-//   }]
-// });
+const formBtn       = document.getElementById('form-submit');
+const form          = document.getElementById('estimate-form');
+const formContainer = document.getElementById('form-container');
 
 // Portfolio filter functionality
 $(document).ready(function () {
