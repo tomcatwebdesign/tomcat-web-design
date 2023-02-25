@@ -57,12 +57,15 @@
             position: relative;
             height: 400px;
             overflow: hidden;
-            padding: 0;
+            // padding: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             img {
-                // object-fit: contain;
+                object-fit: contain;
                 height: auto;
-                width: 100%;
+                width: 50%;
             }
 
             .portfolio-item-content {
@@ -99,6 +102,12 @@
                 height: 100%;
                 opacity: 0;
                 transition: all .5s;
+            }
+
+            #hc-h2 {
+                font-size: 75px;
+                .nunito-bold;
+                color: #FD9C0A;
             }
         }
 
